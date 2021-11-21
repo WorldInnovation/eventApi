@@ -19,4 +19,12 @@ public class Payload {
     public String getFoo() {
         return foo;
     }
+
+    @Override
+    public String toString() {
+        return "Payload{" +
+                "customerId='" + customerId + '\'' +
+                ", foo='" + foo + '\'' +
+                '}';
+    }
 }

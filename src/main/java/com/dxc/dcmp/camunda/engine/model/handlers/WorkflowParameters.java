@@ -19,4 +19,12 @@ public class WorkflowParameters {
     public Payload getPayload() {
         return payload;
     }
+
+    @Override
+    public String toString() {
+        return "WorkflowParameters{" +
+                "workflowName='" + workflowName + '\'' +
+                ", payload=" + payload +
+                '}';
+    }
 }

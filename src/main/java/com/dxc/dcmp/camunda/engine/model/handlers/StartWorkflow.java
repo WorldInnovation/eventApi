@@ -1,14 +1,14 @@
 package com.dxc.dcmp.camunda.engine.model.handlers;
 
-public class StartWorkflowHandler {
+public class StartWorkflow {
     private Long id;
     private String type;
     private WorkflowParameters workflowParameters;
 
-    public StartWorkflowHandler() {
+    public StartWorkflow() {
     }
 
-    public StartWorkflowHandler(String type, WorkflowParameters workflowParameters) {
+    public StartWorkflow(String type, WorkflowParameters workflowParameters) {
         this.type = type;
         this.workflowParameters = workflowParameters;
     }
@@ -19,5 +19,14 @@ public class StartWorkflowHandler {
 
     public WorkflowParameters getWorkflowParameters() {
         return workflowParameters;
+    }
+
+    @Override
+    public String toString() {
+        return "StartWorkflow{" +
+                "id=" + id +
+                ", type='" + type + '\'' +
+                ", workflowParameters=" + workflowParameters +
+                '}';
     }
 }

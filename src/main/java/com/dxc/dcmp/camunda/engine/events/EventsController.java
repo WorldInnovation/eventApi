@@ -1,12 +1,12 @@
 package com.dxc.dcmp.camunda.engine.events;
 
-import com.dxc.dcmp.camunda.engine.model.handlers.StartWorkflowHandler;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.dxc.dcmp.camunda.engine.model.handlers.StartWorkflow;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping ("v1/events")
 public class EventsController {
 
     private final EventsService eventsService;
@@ -16,7 +16,12 @@ public class EventsController {
     }
 
     @GetMapping(path = "starts")
-    public List<StartWorkflowHandler> startsWorkflowList() {
+    public List<StartWorkflow> starts() {
         return eventsService.startsWorkflowList();
+    }
+
+    @PostMapping(path = "item")
+    public void add(@RequestBody StartWorkflow startWorkflow) {
+        eventsService.add(startWorkflow);
     }
 }
