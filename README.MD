@@ -1,6 +1,8 @@
 #   <h2>  This is a simple api example <h6>
 
-example add
+example add:
+POST http://localhost:8080/v1/events/item
+Content-Type : application/json
 {"type":"startEvent","workflowParameters":{"workflowName":"start.v1","payload":{"customerId":"customerId","foo":"foo"}}}
 
 
