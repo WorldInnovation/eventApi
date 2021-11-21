@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine.model;
+package com.dxc.dcmp.camunda.engine.model.handlers;
 
 public class Payload {
     private String customerId;

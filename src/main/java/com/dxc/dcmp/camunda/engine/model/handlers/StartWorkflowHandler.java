@@ -1,14 +1,14 @@
-package com.dxc.dcmp.camunda.engine.model;
+package com.dxc.dcmp.camunda.engine.model.handlers;
 
-public class StartWorkflow {
+public class StartWorkflowHandler {
     private Long id;
     private String type;
     private WorkflowParameters workflowParameters;
 
-    public StartWorkflow() {
+    public StartWorkflowHandler() {
     }
 
-    public StartWorkflow(String type, WorkflowParameters workflowParameters) {
+    public StartWorkflowHandler(String type, WorkflowParameters workflowParameters) {
         this.type = type;
         this.workflowParameters = workflowParameters;
     }

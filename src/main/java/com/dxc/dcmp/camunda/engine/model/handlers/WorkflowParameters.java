@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine.model;
+package com.dxc.dcmp.camunda.engine.model.handlers;
 
 public class WorkflowParameters {
     private String workflowName;
