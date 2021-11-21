@@ -17,6 +17,10 @@ public class StartWorkflow {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "startworkflow_sequence")
     private Long id;
     private String type;
+    private String workflowName;
+    @Column(unique = true)
+    private String customerId;
+    private String foo;
 
 
 }

@@ -7,11 +7,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping ("v1/events")
-public class EventsController {
+public class StartEventController {
 
-    private final EventsService eventsService;
+    private final StartEventService eventsService;
 
-    public EventsController(EventsService eventsService) {
+    public StartEventController(StartEventService eventsService) {
         this.eventsService = eventsService;
     }
 
@@ -24,4 +24,15 @@ public class EventsController {
     public void add(@RequestBody StartWorkflow startWorkflow) {
         eventsService.add(startWorkflow);
     }
+
+    @RequestMapping (path = "item/{startWorkflowId}", method = RequestMethod.DELETE)
+    public void delete(@PathVariable Long startWorkflowId) {
+        eventsService.delete(startWorkflowId);
+    }
+
+   @PutMapping (path = "item")
+    public void update(@RequestBody StartWorkflow startWorkflow) {
+        eventsService.update(startWorkflow);
+    }
+
 }
