@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine;
+package com.camunda.engine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

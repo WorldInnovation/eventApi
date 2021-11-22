@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine.response;
+package com.camunda.engine.response;
 
 public class RestApiResponse {
     private int status;

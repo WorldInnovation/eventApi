@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine;
+package com.camunda.engine;
 
 public class Event {
     private Long id;

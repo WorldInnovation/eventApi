@@ -1,7 +1,7 @@
-package com.dxc.dcmp.camunda.engine.events;
+package com.camunda.engine.events;
 
-import com.dxc.dcmp.camunda.engine.model.handlers.StartWorkflow;
-import com.dxc.dcmp.camunda.engine.response.RestApiException;
+import com.camunda.engine.model.handlers.StartWorkflow;
+import com.camunda.engine.response.RestApiException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

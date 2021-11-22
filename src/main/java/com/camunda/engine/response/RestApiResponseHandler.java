@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine.response;
+package com.camunda.engine.response;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine.extension;
+package com.camunda.engine.extension;
 
 public class EventActions
 {

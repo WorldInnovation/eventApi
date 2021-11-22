@@ -1,4 +1,4 @@
-package com.dxc.dcmp.camunda.engine.response;
+package com.camunda.engine.response;
 
 public class RestApiException extends RuntimeException{
     public RestApiException(String message) {

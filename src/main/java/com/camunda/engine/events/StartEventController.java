@@ -1,6 +1,6 @@
-package com.dxc.dcmp.camunda.engine.events;
+package com.camunda.engine.events;
 
-import com.dxc.dcmp.camunda.engine.model.handlers.StartWorkflow;
+import com.camunda.engine.model.handlers.StartWorkflow;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
